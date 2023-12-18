@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent; /* make scrollbar transparent */
+}
+
+/* Reset de estilos para garantizar consistencia en diferentes navegadores */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222; /* Color de fondo para dark mode */
+    color: #fff; /* Color del texto principal */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para dark mode */
+}
+
+/* Estilos para la barra superior */
+.g-topbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Asegura que la barra superior se fije en la parte superior de la pantalla */
+    z-index: 100; /* Asegura que la barra superior se muestre por encima de otros elementos */
+}
+
+.g-topbar a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.g-topbar a:hover {
+    text-decoration: underline;
+}
+
+.g-topbar h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.g-topbar p {
+    margin: 0 0 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+/* Estilos para la información de la página */
+.page-top-infinite {
+    margin-top: 60px; /* Ajusta este valor según la altura de la barra superior */
+    position: relative;
+    padding: 20px;
+    overflow: scroll;
+    padding-bottom: 20vh;
+}
+
+.page-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.date-published {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Estilos para el contenido del artículo */
+.content {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.content a {
+    color: #F1D3DE;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para dark mode */
+body.dark-mode {
+    background-color: #111;
+    color: #ddd;
+}
+
+.help-menu-toggle {
+    background-color: transparent; /* Fondo transparente para el botón */
+    border: none; /* Sin borde para el botón */
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: auto; /* Mueve el botón hacia la derecha */
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.help-menu-toggle:hover {
+    color: #ddd; /* Cambia el color al pasar el mouse sobre el botón */
+}

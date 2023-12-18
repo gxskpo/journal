@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #673ab7, #2196f3); /* Degradado morado a azul */
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.15); /* Fondo con transparencia */
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Efecto glassmorphism */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* Color del texto */
+}
+
+p {
+    color: #eee; /* Color del texto */
+}
+
+.unlock-button {
+    background: linear-gradient(to right, #ca90f8, #4cc7f5); /* Degradado morado a azul */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.unlock-button:hover {
+    background: linear-gradient(to right, #4cc7f5, #ca90f8); /* Cambio de color al pasar el ratón */
+}

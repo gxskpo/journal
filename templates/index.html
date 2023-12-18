@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Glassmorphism Example</title>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Welcome to your private and encrypted diary</h1>
+        <p>Write your thoughts and ideas here</p>
+        <button class="unlock-button">Unlock</button>
+    </div>
+</body>
+<script>
+    const unlockButton = document.querySelector('.unlock-button');
+    unlockButton.addEventListener('click', () => {
+        window.location.href = '/notes';
+    });
+
+</script>
+
+</html>
