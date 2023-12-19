@@ -1,4 +1,4 @@
-# Private diary
+# Private journal
 
 ## and encrypted
 
